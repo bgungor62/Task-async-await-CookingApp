@@ -28,118 +28,120 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnYumartalariKir = new Button();
-            btnYumurtalariCirp = new Button();
-            btnTuzEkle = new Button();
-            btnOcagiAc = new Button();
-            btnTavayiIsit = new Button();
-            btnYagiDok = new Button();
-            button7 = new Button();
-            btnPisir = new Button();
-            btnServisEt = new Button();
+            btnStep1 = new Button();
+            btnStep2 = new Button();
+            btnStep3 = new Button();
+            btnStep4 = new Button();
+            btnStep5 = new Button();
+            btnStep6 = new Button();
+            btnStep7 = new Button();
+            btnStep8 = new Button();
+            btnStep9 = new Button();
             label1 = new Label();
             listBox1 = new ListBox();
             btnStartCooking = new Button();
+            pnlButtons = new Panel();
+            pnlButtons.SuspendLayout();
             SuspendLayout();
             // 
-            // btnYumartalariKir
+            // btnStep1
             // 
-            btnYumartalariKir.BackColor = Color.Silver;
-            btnYumartalariKir.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnYumartalariKir.Location = new Point(736, 11);
-            btnYumartalariKir.Name = "btnYumartalariKir";
-            btnYumartalariKir.Size = new Size(304, 60);
-            btnYumartalariKir.TabIndex = 0;
-            btnYumartalariKir.Text = "Yumurtaları Kır";
-            btnYumartalariKir.UseVisualStyleBackColor = false;
+            btnStep1.BackColor = Color.Silver;
+            btnStep1.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnStep1.Location = new Point(16, 3);
+            btnStep1.Name = "btnStep1";
+            btnStep1.Size = new Size(304, 60);
+            btnStep1.TabIndex = 0;
+            btnStep1.Text = "Yumurtaları Kır";
+            btnStep1.UseVisualStyleBackColor = false;
             // 
-            // btnYumurtalariCirp
+            // btnStep2
             // 
-            btnYumurtalariCirp.BackColor = Color.Silver;
-            btnYumurtalariCirp.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnYumurtalariCirp.Location = new Point(736, 77);
-            btnYumurtalariCirp.Name = "btnYumurtalariCirp";
-            btnYumurtalariCirp.Size = new Size(304, 60);
-            btnYumurtalariCirp.TabIndex = 1;
-            btnYumurtalariCirp.Text = "Yumurtaları Çırp";
-            btnYumurtalariCirp.UseVisualStyleBackColor = false;
+            btnStep2.BackColor = Color.Silver;
+            btnStep2.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnStep2.Location = new Point(16, 69);
+            btnStep2.Name = "btnStep2";
+            btnStep2.Size = new Size(304, 60);
+            btnStep2.TabIndex = 1;
+            btnStep2.Text = "Yumurtaları Çırp";
+            btnStep2.UseVisualStyleBackColor = false;
             // 
-            // btnTuzEkle
+            // btnStep3
             // 
-            btnTuzEkle.BackColor = Color.Silver;
-            btnTuzEkle.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnTuzEkle.Location = new Point(736, 143);
-            btnTuzEkle.Name = "btnTuzEkle";
-            btnTuzEkle.Size = new Size(304, 60);
-            btnTuzEkle.TabIndex = 2;
-            btnTuzEkle.Text = "Tuz Ekle";
-            btnTuzEkle.UseVisualStyleBackColor = false;
+            btnStep3.BackColor = Color.Silver;
+            btnStep3.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnStep3.Location = new Point(16, 135);
+            btnStep3.Name = "btnStep3";
+            btnStep3.Size = new Size(304, 60);
+            btnStep3.TabIndex = 2;
+            btnStep3.Text = "Tuz Ekle";
+            btnStep3.UseVisualStyleBackColor = false;
             // 
-            // btnOcagiAc
+            // btnStep4
             // 
-            btnOcagiAc.BackColor = Color.Silver;
-            btnOcagiAc.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnOcagiAc.Location = new Point(736, 209);
-            btnOcagiAc.Name = "btnOcagiAc";
-            btnOcagiAc.Size = new Size(304, 60);
-            btnOcagiAc.TabIndex = 3;
-            btnOcagiAc.Text = "Ocağı Aç";
-            btnOcagiAc.UseVisualStyleBackColor = false;
+            btnStep4.BackColor = Color.Silver;
+            btnStep4.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnStep4.Location = new Point(16, 201);
+            btnStep4.Name = "btnStep4";
+            btnStep4.Size = new Size(304, 60);
+            btnStep4.TabIndex = 3;
+            btnStep4.Text = "Ocağı Aç";
+            btnStep4.UseVisualStyleBackColor = false;
             // 
-            // btnTavayiIsit
+            // btnStep5
             // 
-            btnTavayiIsit.BackColor = Color.Silver;
-            btnTavayiIsit.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnTavayiIsit.Location = new Point(736, 275);
-            btnTavayiIsit.Name = "btnTavayiIsit";
-            btnTavayiIsit.Size = new Size(304, 60);
-            btnTavayiIsit.TabIndex = 4;
-            btnTavayiIsit.Text = "Tavayı Isıt";
-            btnTavayiIsit.UseVisualStyleBackColor = false;
+            btnStep5.BackColor = Color.Silver;
+            btnStep5.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnStep5.Location = new Point(16, 267);
+            btnStep5.Name = "btnStep5";
+            btnStep5.Size = new Size(304, 60);
+            btnStep5.TabIndex = 4;
+            btnStep5.Text = "Tavayı Isıt";
+            btnStep5.UseVisualStyleBackColor = false;
             // 
-            // btnYagiDok
+            // btnStep6
             // 
-            btnYagiDok.BackColor = Color.Silver;
-            btnYagiDok.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnYagiDok.Location = new Point(736, 341);
-            btnYagiDok.Name = "btnYagiDok";
-            btnYagiDok.Size = new Size(304, 60);
-            btnYagiDok.TabIndex = 5;
-            btnYagiDok.Text = "Yağı Dök";
-            btnYagiDok.UseVisualStyleBackColor = false;
+            btnStep6.BackColor = Color.Silver;
+            btnStep6.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnStep6.Location = new Point(16, 333);
+            btnStep6.Name = "btnStep6";
+            btnStep6.Size = new Size(304, 60);
+            btnStep6.TabIndex = 5;
+            btnStep6.Text = "Yağı Dök";
+            btnStep6.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnStep7
             // 
-            button7.BackColor = Color.Silver;
-            button7.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button7.Location = new Point(736, 407);
-            button7.Name = "button7";
-            button7.Size = new Size(304, 60);
-            button7.TabIndex = 6;
-            button7.Text = "Yumurtayı Ekle";
-            button7.UseVisualStyleBackColor = false;
+            btnStep7.BackColor = Color.Silver;
+            btnStep7.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnStep7.Location = new Point(16, 399);
+            btnStep7.Name = "btnStep7";
+            btnStep7.Size = new Size(304, 60);
+            btnStep7.TabIndex = 6;
+            btnStep7.Text = "Yumurtayı Ekle";
+            btnStep7.UseVisualStyleBackColor = false;
             // 
-            // btnPisir
+            // btnStep8
             // 
-            btnPisir.BackColor = Color.Silver;
-            btnPisir.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnPisir.Location = new Point(736, 473);
-            btnPisir.Name = "btnPisir";
-            btnPisir.Size = new Size(304, 60);
-            btnPisir.TabIndex = 7;
-            btnPisir.Text = "Pişir";
-            btnPisir.UseVisualStyleBackColor = false;
+            btnStep8.BackColor = Color.Silver;
+            btnStep8.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnStep8.Location = new Point(16, 465);
+            btnStep8.Name = "btnStep8";
+            btnStep8.Size = new Size(304, 60);
+            btnStep8.TabIndex = 7;
+            btnStep8.Text = "Pişir";
+            btnStep8.UseVisualStyleBackColor = false;
             // 
-            // btnServisEt
+            // btnStep9
             // 
-            btnServisEt.BackColor = Color.Silver;
-            btnServisEt.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnServisEt.Location = new Point(736, 539);
-            btnServisEt.Name = "btnServisEt";
-            btnServisEt.Size = new Size(304, 60);
-            btnServisEt.TabIndex = 8;
-            btnServisEt.Text = "Servis Et";
-            btnServisEt.UseVisualStyleBackColor = false;
+            btnStep9.BackColor = Color.Silver;
+            btnStep9.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnStep9.Location = new Point(16, 531);
+            btnStep9.Name = "btnStep9";
+            btnStep9.Size = new Size(304, 60);
+            btnStep9.TabIndex = 8;
+            btnStep9.Text = "Servis Et";
+            btnStep9.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -170,42 +172,53 @@
             btnStartCooking.Text = "Start Cooking ";
             btnStartCooking.UseVisualStyleBackColor = true;
             // 
+            // pnlButtons
+            // 
+            pnlButtons.Controls.Add(btnStep1);
+            pnlButtons.Controls.Add(btnStep2);
+            pnlButtons.Controls.Add(btnStep3);
+            pnlButtons.Controls.Add(btnStep4);
+            pnlButtons.Controls.Add(btnStep9);
+            pnlButtons.Controls.Add(btnStep5);
+            pnlButtons.Controls.Add(btnStep8);
+            pnlButtons.Controls.Add(btnStep6);
+            pnlButtons.Controls.Add(btnStep7);
+            pnlButtons.Location = new Point(729, 12);
+            pnlButtons.Name = "pnlButtons";
+            pnlButtons.Size = new Size(336, 600);
+            pnlButtons.TabIndex = 12;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1052, 742);
+            ClientSize = new Size(1099, 881);
+            Controls.Add(pnlButtons);
             Controls.Add(btnStartCooking);
             Controls.Add(listBox1);
             Controls.Add(label1);
-            Controls.Add(btnServisEt);
-            Controls.Add(btnPisir);
-            Controls.Add(button7);
-            Controls.Add(btnYagiDok);
-            Controls.Add(btnTavayiIsit);
-            Controls.Add(btnOcagiAc);
-            Controls.Add(btnTuzEkle);
-            Controls.Add(btnYumurtalariCirp);
-            Controls.Add(btnYumartalariKir);
             Name = "Form1";
             Text = "Task async/await";
+            Load += Form1_Load;
+            pnlButtons.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button btnYumartalariKir;
-        private Button btnYumurtalariCirp;
-        private Button btnTuzEkle;
-        private Button btnOcagiAc;
-        private Button btnTavayiIsit;
-        private Button btnYagiDok;
-        private Button button7;
-        private Button btnPisir;
-        private Button btnServisEt;
+        private Button btnStep1;
+        private Button btnStep2;
+        private Button btnStep3;
+        private Button btnStep4;
+        private Button btnStep5;
+        private Button btnStep6;
+        private Button btnStep7;
+        private Button btnStep8;
+        private Button btnStep9;
         private Label label1;
         private ListBox listBox1;
         private Button btnStartCooking;
+        private Panel pnlButtons;
     }
 }
