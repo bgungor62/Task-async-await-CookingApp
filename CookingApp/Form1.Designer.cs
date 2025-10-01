@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             btnStep1 = new Button();
             btnStep2 = new Button();
             btnStep3 = new Button();
@@ -41,6 +42,8 @@
             listBox1 = new ListBox();
             btnStartCooking = new Button();
             pnlButtons = new Panel();
+            btnStartCookingAsync = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
             pnlButtons.SuspendLayout();
             SuspendLayout();
             // 
@@ -146,12 +149,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Georgia", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Georgia", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(843, 639);
             label1.Name = "label1";
-            label1.Size = new Size(77, 25);
+            label1.Size = new Size(0, 31);
             label1.TabIndex = 9;
-            label1.Text = "Timer";
             // 
             // listBox1
             // 
@@ -164,13 +166,16 @@
             // 
             // btnStartCooking
             // 
+            btnStartCooking.BackColor = Color.MidnightBlue;
             btnStartCooking.Font = new Font("Georgia", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnStartCooking.Location = new Point(12, 11);
+            btnStartCooking.ForeColor = SystemColors.ButtonFace;
+            btnStartCooking.Location = new Point(12, 46);
             btnStartCooking.Name = "btnStartCooking";
             btnStartCooking.Size = new Size(707, 61);
             btnStartCooking.TabIndex = 11;
-            btnStartCooking.Text = "Start Cooking ";
-            btnStartCooking.UseVisualStyleBackColor = true;
+            btnStartCooking.Text = "Start Cooking Sync";
+            btnStartCooking.UseVisualStyleBackColor = false;
+            btnStartCooking.Click += btnStartCooking_Click;
             // 
             // pnlButtons
             // 
@@ -188,11 +193,25 @@
             pnlButtons.Size = new Size(336, 600);
             pnlButtons.TabIndex = 12;
             // 
+            // btnStartCookingAsync
+            // 
+            btnStartCookingAsync.BackColor = Color.MidnightBlue;
+            btnStartCookingAsync.Font = new Font("Georgia", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnStartCookingAsync.ForeColor = SystemColors.ButtonFace;
+            btnStartCookingAsync.Location = new Point(12, 149);
+            btnStartCookingAsync.Name = "btnStartCookingAsync";
+            btnStartCookingAsync.Size = new Size(707, 61);
+            btnStartCookingAsync.TabIndex = 13;
+            btnStartCookingAsync.Text = "Start Cooking Async";
+            btnStartCookingAsync.UseVisualStyleBackColor = false;
+            btnStartCookingAsync.Click += btnStartCookingAsync_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1099, 881);
+            Controls.Add(btnStartCookingAsync);
             Controls.Add(pnlButtons);
             Controls.Add(btnStartCooking);
             Controls.Add(listBox1);
@@ -220,5 +239,7 @@
         private ListBox listBox1;
         private Button btnStartCooking;
         private Panel pnlButtons;
+        private Button btnStartCookingAsync;
+        private System.Windows.Forms.Timer timer1;
     }
 }
