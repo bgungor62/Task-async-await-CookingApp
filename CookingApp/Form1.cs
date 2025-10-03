@@ -161,15 +161,36 @@ namespace CookingApp
             uiSetDefault();
             var sw = Stopwatch.StartNew();
 
-            await YumurtalariKirAsync();
-            await YumurtalariCirpAsync();
-            await TuzEkleAsync();
-            await OcagiAcAsync();
-            await TavayiIsitAsync();
-            await YagiDokAsync();
-            await YumurtayiEkleAsync();
+            //Ýstersek gruplayarak da yapabiliriz
+            //Yumurtalarý kýrma, çýrpma ve tuz ekleme iþlemleri paralel olabilir
+            var yumurtaTaskGroup = await YumurtalariKirAsync()
+                .ContinueWith(async _ =>
+                {
+                    await YumurtalariCirpAsync();
+                    await TuzEkleAsync();
+                },TaskScheduler.FromCurrentSynchronizationContext());
+
+            var ocakTaskGroup=await OcagiAcAsync()
+                .ContinueWith(async _ =>
+                {
+                    await TavayiIsitAsync();
+                    await YagiDokAsync();
+                    await YumurtayiEkleAsync();
+                },TaskScheduler.FromCurrentSynchronizationContext());
+
+            await Task.WhenAll(yumurtaTaskGroup, ocakTaskGroup);//bu iþlemler bitince alttaki iþlemlere geç
             await YemegiPisirAsync();
             await ServisEtAsync();
+
+            //await YumurtalariKirAsync();
+            //await YumurtalariCirpAsync();
+            //await TuzEkleAsync();
+            //await OcagiAcAsync();
+            //await TavayiIsitAsync();
+            //await YagiDokAsync();
+            //await YumurtayiEkleAsync();
+            //await YemegiPisirAsync();
+            //await ServisEtAsync();
 
             sw.Stop();
             AddLog("");
